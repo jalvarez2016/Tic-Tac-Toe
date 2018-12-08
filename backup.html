@@ -1,11 +1,13 @@
 <html>
 <head>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="backup.css" type="text/css" />
 </head>
 <body>
     
 <p>Drag the W3Schools image into the rectangle:</p>
+<div id="playarea">
+
+
     <div id="topRow">
         <div class="box" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <br>
@@ -15,23 +17,45 @@
         <br>
     </div>
 
+    <div id="midRow">
+        <div class="box" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <div class="box" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <div class="box" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+    </div>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
-<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
+    <div id="lastRow">
+        <div class="box" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <div class="box" id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <div class="box" id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+    </div>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
-<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
+</div>
 
 <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
 <img id="drag2" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
 
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA9i7qgUNqp2R0KLfoQ0esrZ-6c5qn9eMo",
+    authDomain: "tic-tac-toe-95e0a.firebaseapp.com",
+    databaseURL: "https://tic-tac-toe-95e0a.firebaseio.com",
+    projectId: "tic-tac-toe-95e0a",
+    storageBucket: "tic-tac-toe-95e0a.appspot.com",
+    messagingSenderId: "888656483992"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="backup.js"></script>
 </html>

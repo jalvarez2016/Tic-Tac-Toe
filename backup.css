@@ -1,0 +1,32 @@
+#playarea{
+    border:1px solid;
+    height:600px;
+    width:800px;
+    margin:0px;
+}
+
+.box{
+    float: left;
+    position: absolute;
+    border:1px solid;
+    width:40%;
+    height:100%;
+}
+
+#topRow{
+position: relative;
+top:20%;
+width:100%;
+height:20px;
+
+}
+
+#midRow{
+position: absolute;
+
+}
+
+#lastRow{
+position: absolute;
+
+}

@@ -1,19 +1,5 @@
 /*global $*/
 
-function allowDrop(ev) {
-    ev.preventDefault();
-}
-
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-
 /* this is where code begins being used. you can get rid of everything above*/
 
     console.log("helloe there");
@@ -46,27 +32,31 @@ function drawEverything(){
     /*middle row*/
 
     ctx.fillStyle = "white";
-    ctx.fillRect(c.width/spacing, c.height/spacing * 2, 20, 10);
+    ctx.fillRect(c.width/spacing, c.height/spacing * 2, length, tall);
 
     ctx.fillStyle = "white";
-    ctx.fillRect(c.width/spacing * 2, c.height/spacing * 2, 20, 10);
+    ctx.fillRect(c.width/spacing * 2, c.height/spacing * 2, length, tall);
 
     ctx.fillStyle = "white";
-    ctx.fillRect(c.width/spacing * 3, c.height/spacing * 2, 20, 10);
+    ctx.fillRect(c.width/spacing * 3, c.height/spacing * 2, length, tall);
 
     /*bottom row*/
 
     ctx.fillStyle = "white";
-    ctx.fillRect(c.width/spacing * 1, c.height/spacing * 3, 20, 10);
+    ctx.fillRect(c.width/spacing * 1, c.height/spacing * 3, length, tall);
 
     ctx.fillStyle = "white";
-    ctx.fillRect(c.width/spacing * 2, c.height/spacing * 3, 20, 10);
+    ctx.fillRect(c.width/spacing * 2, c.height/spacing * 3, length, tall);
 
     ctx.fillStyle = "white";
-    ctx.fillRect(c.width/spacing * 3, c.height/spacing * 3, 20, 10);
+    ctx.fillRect(c.width/spacing * 3, c.height/spacing * 3, length, tall);
 
-    
+    drawTacks();
 
 }
 
+function drawTacks(){
+    ctx.fillStyle = "black"
+    ctx.fillRect()
+}
    
